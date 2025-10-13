@@ -1,4 +1,4 @@
-/* Reset basico */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,40 +6,22 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
 .contenedor {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-/* Titulos */
-h1 {
-    font-size: 2rem;
-    color: #2B1B5B;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: #2B1B5B;
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 1.3rem;
-    color: #40B4E5;
-    margin-bottom: 10px;
+    padding: 0 20px;
 }
 
 /* Header */
 header {
-    background: #f4f4f4;
+    background: white;
+    border-bottom: 1px solid #eee;
     padding: 20px 0;
-    border-bottom: 3px solid #40B4E5;
 }
 
 header .contenedor {
@@ -48,153 +30,145 @@ header .contenedor {
     align-items: center;
 }
 
+h1 {
+    font-size: 1.5rem;
+    color: #2B1B5B;
+}
+
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
-    color: #333;
+    color: #666;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
     color: #40B4E5;
 }
 
-/* Secciones generales */
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #2B1B5B 0%, #40B4E5 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Secciones */
 section {
-    padding: 50px 0;
+    padding: 60px 20px;
 }
 
-#info {
-    background: #2B1B5B;
-    color: white;
+h2 {
+    font-size: 2rem;
+    color: #2B1B5B;
+    margin-bottom: 40px;
     text-align: center;
 }
 
-#info h2 {
-    color: white;
+h3 {
+    font-size: 1.2rem;
+    color: #2B1B5B;
+    margin-bottom: 10px;
 }
 
-/* Caracteristicas */
+/* Características */
 #caracteristicas {
-    background: #f9f9f9;
+    background: #f8f9fa;
 }
 
-.caracteristica {
+.grid-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 4px solid #E91E8C;
-}
-
-/* Para que sirve */
-#para-que-sirve {
-    background: white;
-}
-
-.caso-uso {
-    background: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-left: 4px solid #40B4E5;
-}
-
-.caso-uso h3 {
-    color: #2B1B5B;
-    margin-bottom: 10px;
-}
-
-/* Como usar */
-#como-usar {
-    background: #f9f9f9;
-}
-
-.paso-uso {
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
+    padding: 30px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.paso-uso h3 {
-    color: #2B1B5B;
-    margin-bottom: 15px;
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
-.paso-uso ul {
-    margin-left: 25px;
-    margin-top: 10px;
-}
-
-.paso-uso li {
-    margin-bottom: 8px;
-}
-
-.paso-uso img {
-    max-width: 700px;
-    width: 100%;
-    margin-top: 15px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nota-captura {
-    font-style: italic;
+.card p {
     color: #666;
-    margin-top: 10px;
     font-size: 0.95rem;
 }
 
-.paso-uso .nota {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
-    padding: 15px;
-    margin-top: 15px;
-    font-size: 0.95rem;
-}
-
-/* Capturas */
-#capturas {
+/* Como Usar */
+#uso {
     background: white;
 }
 
-.galeria-capturas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.paso {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
 }
 
-.captura {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    text-align: center;
+.paso:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.captura img {
+.paso-texto ul {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.paso-texto li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.paso-imagen img {
     width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-    border: 2px solid #ddd;
+    max-width: 500px;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Instalación */
+#instalacion {
+    background: #f8f9fa;
+}
+
+.metodos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.metodos ol {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.metodos li {
     margin-bottom: 10px;
-}
-
-.captura p {
-    font-weight: 600;
-    color: #2B1B5B;
-}
-
-/* Instalacion */
-#instalacion ol {
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
-
-#instalacion li {
-    margin-bottom: 10px;
+    color: #666;
 }
 
 /* Footer */
@@ -202,11 +176,21 @@ footer {
     background: #2B1B5B;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 20px;
 }
 
-/* GIF */
-.paso-uso img[src*=".gif"] {
-    max-width: 600px;
-    border: 3px solid #40B4E5;
+/* Responsive */
+@media (max-width: 768px) {
+    .paso {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    nav a {
+        margin-left: 15px;
+        font-size: 0.9rem;
+    }
 }

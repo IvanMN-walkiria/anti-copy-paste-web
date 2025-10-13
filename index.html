@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anti Copy-Paste Plugin WordPress</title>
+    <title>Anti Copy-Paste - Plugin WordPress</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,148 +14,83 @@
             <h1>Anti Copy-Paste</h1>
             <nav>
                 <a href="#caracteristicas">Características</a>
-                <a href="#como-usar">Cómo Usar</a>
-                <a href="#capturas">Capturas</a>
+                <a href="#uso">Cómo Usar</a>
                 <a href="#instalacion">Instalación</a>
             </nav>
         </div>
     </header>
 
-    <!-- Intro -->
-    <section id="info">
+    <!-- Hero -->
+    <section class="hero">
         <div class="contenedor">
-            <h2>Plugin para WordPress</h2>
-            <p>Protege tu contenido bloqueando la selección y copia de texto en tu sitio web.</p>
+            <h2>Protege tu Contenido de WordPress</h2>
+            <p>Plugin simple que bloquea la selección y copia de texto en tu sitio web</p>
         </div>
     </section>
 
     <!-- Características -->
     <section id="caracteristicas">
         <div class="contenedor">
-            <h2>Características</h2>
-            
-            <div class="caracteristica">
-                <h3>Protección de Contenido</h3>
-                <p>Bloquea la selección de texto para evitar copias fáciles de tu contenido</p>
-            </div>
-            
-            <div class="caracteristica">
-                <h3>Excepciones por Roles</h3>
-                <p>Los administradores y editores pueden seguir copiando sin restricciones</p>
-            </div>
-            
-            <div class="caracteristica">
-                <h3>Fácil Configuración</h3>
-                <p>Se configura desde el panel de WordPress en pocos clics</p>
-            </div>
-
-            <div class="caracteristica">
-                <h3>Selectores Personalizados</h3>
-                <p>Define qué elementos permiten selección de texto (formularios, código, etc.)</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Para qué sirve -->
-    <section id="para-que-sirve">
-        <div class="contenedor">
-            <h2>¿Para Qué Sirve?</h2>
-            
-            <div class="caso-uso">
-                <h3>🔒 Protege tu Contenido Original</h3>
-                <p>Evita que copien tus artículos, tutoriales o contenido exclusivo sin permiso.</p>
-            </div>
-
-            <div class="caso-uso">
-                <h3>📰 Ideal para Blogs y Medios</h3>
-                <p>Protege tus noticias, artículos de opinión y contenido editorial.</p>
-            </div>
-
-            <div class="caso-uso">
-                <h3>📚 Contenido Educativo Premium</h3>
-                <p>Mantén tus cursos, guías y materiales educativos protegidos.</p>
-            </div>
-
-            <div class="caso-uso">
-                <h3>💼 Sitios Corporativos</h3>
-                <p>Protege descripciones de productos, servicios y contenido comercial.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cómo usar -->
-    <section id="como-usar">
-        <div class="contenedor">
-            <h2>Cómo Usar el Plugin</h2>
-            
-            <div class="paso-uso">
-                <h3>Paso 1: Instalar el Plugin</h3>
-                <p>Instala el plugin desde el repositorio de WordPress o subiendo el archivo ZIP manualmente.</p>
-            </div>
-
-            <div class="paso-uso">
-                <h3>Paso 2: Activar el Plugin</h3>
-                <p>Ve a <strong>Plugins → Plugins instalados</strong> y busca "Anti Copy-Paste". Haz clic en <strong>Activate</strong>.</p>
-                <img src="images/captura-plugins.png" alt="Activar plugin">
-                <p class="nota-captura">El plugin aparece en la lista. Haz clic en "Activate" para activarlo.</p>
-            </div>
-
-            <div class="paso-uso">
-                <h3>Paso 3: Verificar Activación</h3>
-                <p>Una vez activado, el botón cambiará a <strong>Deactivate</strong> y aparecerá el enlace de <strong>Settings</strong>.</p>
-                <img src="images/captura-detalle-plugin.png" alt="Plugin activado">
-                <p class="nota-captura">El plugin está activado y listo para configurarse.</p>
-            </div>
-
-            <div class="paso-uso">
-                <h3>Paso 4: Configurar Ajustes</h3>
-                <p>Haz clic en <strong>Settings</strong> o ve a <strong>Ajustes → Anti Copy-Paste</strong> para configurar:</p>
-                <ul>
-                    <li><strong>Activar Protección Global:</strong> Marca esta opción para habilitar la protección</li>
-                    <li><strong>Excluir Roles:</strong> Selecciona qué roles pueden copiar contenido (por defecto: administradores y editores)</li>
-                    <li><strong>Excluir Tipos de Contenido:</strong> Elige qué tipos de contenido proteger o excluir</li>
-                    <li><strong>Selectores Permitidos:</strong> Define elementos donde sí se permite selección (inputs, textareas, código, etc.)</li>
-                </ul>
-                <img src="images/captura-ajustes.png" alt="Panel de ajustes">
-                <p class="nota-captura">Panel de configuración con todas las opciones disponibles.</p>
-            </div>
-
-            <div class="paso-uso">
-                <h3>Paso 5: Guardar y Probar</h3>
-                <p>Haz clic en <strong>Save Changes</strong> para guardar la configuración.</p>
-                <p>Abre tu sitio web en una ventana de incógnito (sin estar logueado) e intenta seleccionar el texto. Verás que no se puede copiar.</p>
-            </div>
-
-            <div class="paso-uso">
-                <h3>Opciones Avanzadas (Opcionales)</h3>
-                <ul>
-                    <li><strong>Bloquear Clic Derecho:</strong> Desactiva el menú contextual en toda la página</li>
-                    <li><strong>Bloquear Evento Copiar:</strong> Intenta bloquear el atajo Ctrl+C o Cmd+C</li>
-                </ul>
-                <p class="nota">Nota: Esta protección es una medida disuasoria. Usuarios avanzados con conocimientos técnicos pueden desactivarla usando herramientas de desarrollo del navegador.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Capturas de pantalla -->
-    <section id="capturas">
-        <div class="contenedor">
-            <h2>Capturas de Pantalla</h2>
-            
-            <div class="galeria-capturas">
-                <div class="captura">
-                    <img src="images/captura-plugins.png" alt="Lista de plugins">
-                    <p>Plugin listo para activar</p>
+            <h2>Características Principales</h2>
+            <div class="grid-caracteristicas">
+                <div class="card">
+                    <h3>Protección de Contenido</h3>
+                    <p>Bloquea la selección de texto para evitar copias fáciles</p>
                 </div>
-
-                <div class="captura">
-                    <img src="images/captura-detalle-plugin.png" alt="Plugin activado">
-                    <p>Plugin activado correctamente</p>
+                <div class="card">
+                    <h3>Excepciones por Roles</h3>
+                    <p>Administradores y editores pueden copiar sin restricciones</p>
                 </div>
+                <div class="card">
+                    <h3>Fácil Configuración</h3>
+                    <p>Se configura en minutos desde el panel de WordPress</p>
+                </div>
+                <div class="card">
+                    <h3>Selectores Personalizados</h3>
+                    <p>Define dónde permitir selección (formularios, código, etc.)</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="captura">
-                    <img src="images/captura-ajustes.png" alt="Panel de configuración">
-                    <p>Panel de configuración completo</p>
+    <!-- Cómo Usar -->
+    <section id="uso">
+        <div class="contenedor">
+            <h2>Cómo Usar</h2>
+            
+            <div class="paso">
+                <div class="paso-texto">
+                    <h3>1. Instalar y Activar</h3>
+                    <p>Ve a <strong>Plugins → Plugins instalados</strong> y activa "Anti Copy-Paste".</p>
+                </div>
+                <div class="paso-imagen">
+                    <img src="images/captura-plugins.png" alt="Activar plugin">
+                </div>
+            </div>
+
+            <div class="paso">
+                <div class="paso-texto">
+                    <h3>2. Configurar Opciones</h3>
+                    <p>Ve a <strong>Ajustes → Anti Copy-Paste</strong> y configura:</p>
+                    <ul>
+                        <li>Activar protección global</li>
+                        <li>Excluir roles (administradores, editores)</li>
+                        <li>Excluir tipos de contenido</li>
+                        <li>Definir selectores permitidos</li>
+                    </ul>
+                </div>
+                <div class="paso-imagen">
+                    <img src="images/captura-ajustes.png" alt="Panel de ajustes">
+                </div>
+            </div>
+
+            <div class="paso">
+                <div class="paso-texto">
+                    <h3>3. Probar Funcionamiento</h3>
+                    <p>Abre tu sitio en modo incógnito e intenta seleccionar texto. Verás que no se puede copiar.</p>
+                </div>
+                <div class="paso-imagen">
+                    <img src="images/UsoAntiCopy.gif" alt="Demostración">
                 </div>
             </div>
         </div>
@@ -165,27 +100,31 @@
     <section id="instalacion">
         <div class="contenedor">
             <h2>Instalación</h2>
-            
-            <h3>Instalación Automática</h3>
-            <ol>
-                <li>Ve a Plugins - Añadir nuevo</li>
-                <li>Busca "Anti Copy-Paste Aprendiz de SEO"</li>
-                <li>Instala y activa</li>
-            </ol>
-            
-            <h3>Instalación Manual</h3>
-            <ol>
-                <li>Descarga el plugin</li>
-                <li>Sube el ZIP en Plugins - Subir plugin</li>
-                <li>Activa el plugin</li>
-            </ol>
+            <div class="metodos">
+                <div>
+                    <h3>Automática</h3>
+                    <ol>
+                        <li>Ve a Plugins → Añadir nuevo</li>
+                        <li>Busca "Anti Copy-Paste Aprendiz de SEO"</li>
+                        <li>Instala y activa</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Manual</h3>
+                    <ol>
+                        <li>Descarga el archivo ZIP</li>
+                        <li>Sube en Plugins → Subir plugin</li>
+                        <li>Activa el plugin</li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="contenedor">
-            <p>2025 Aprendiz de SEO</p>
+            <p>&copy; 2025 Aprendiz de SEO - Plugin Anti Copy-Paste</p>
         </div>
     </footer>
 
