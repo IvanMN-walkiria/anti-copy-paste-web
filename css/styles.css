@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Reset basico */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,7 @@ body {
     padding: 20px;
 }
 
+/* Titulos */
 h1 {
     font-size: 2rem;
     color: #2B1B5B;
@@ -57,7 +58,7 @@ nav a:hover {
     color: #40B4E5;
 }
 
-/* Secciones */
+/* Secciones generales */
 section {
     padding: 50px 0;
 }
@@ -72,6 +73,7 @@ section {
     color: white;
 }
 
+/* Caracteristicas */
 #caracteristicas {
     background: #f9f9f9;
 }
@@ -83,6 +85,103 @@ section {
     border-left: 4px solid #E91E8C;
 }
 
+/* Para que sirve */
+#para-que-sirve {
+    background: white;
+}
+
+.caso-uso {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #40B4E5;
+}
+
+.caso-uso h3 {
+    color: #2B1B5B;
+    margin-bottom: 10px;
+}
+
+/* Como usar */
+#como-usar {
+    background: #f9f9f9;
+}
+
+.paso-uso {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.paso-uso h3 {
+    color: #2B1B5B;
+    margin-bottom: 15px;
+}
+
+.paso-uso ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.paso-uso li {
+    margin-bottom: 8px;
+}
+
+.paso-uso img {
+    max-width: 100%;
+    margin-top: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.nota-captura {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.paso-uso .nota {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+/* Capturas */
+#capturas {
+    background: white;
+}
+
+.galeria-capturas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.captura {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.captura img {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.captura p {
+    font-weight: 600;
+    color: #2B1B5B;
+}
+
+/* Instalacion */
 #instalacion ol {
     margin-left: 30px;
     margin-bottom: 30px;
