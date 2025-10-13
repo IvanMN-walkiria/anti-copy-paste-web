@@ -129,10 +129,14 @@ section {
 }
 
 .paso-uso img {
-    max-width: 100%;
+    max-width: 700px;
+    width: 100%;
     margin-top: 15px;
     border: 2px solid #ddd;
     border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nota-captura {
@@ -171,6 +175,8 @@ section {
 
 .captura img {
     width: 100%;
+    max-height: 400px;
+    object-fit: contain;
     border: 2px solid #ddd;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -197,4 +203,10 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* GIF */
+.paso-uso img[src*=".gif"] {
+    max-width: 600px;
+    border: 3px solid #40B4E5;
 }
