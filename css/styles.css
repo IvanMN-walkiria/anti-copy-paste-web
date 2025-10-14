@@ -19,8 +19,8 @@ body {
 
 /* Header */
 header {
-  background: #2b1b5b;
-  border-bottom: none;
+  background: #0d0819;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
   padding: 20px 0;
 }
 
@@ -31,19 +31,38 @@ header .contenedor {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-header {
+  height: 40px;
+  width: auto;
 }
 
 nav a {
-  margin-left: 25px;
+  margin-left: 15px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #40b4e5;
+  color: white;
+  background: rgba(64, 180, 229, 0.2);
+  border-color: #40b4e5;
 }
 
 /* Hero */
