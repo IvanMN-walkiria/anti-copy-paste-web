@@ -5,10 +5,48 @@
   box-sizing: border-box;
 }
 
+/* Variantes de color */
+:root {
+  --bg-header: #0d0819;
+  --bg-hero: #2b1b5b;
+  --bg-light: #ffffff;
+  --bg-gray: #f8f9fa;
+  --text-dark: #333;
+  --text-light: white;
+  --border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  --bg-header: #000000;
+  --bg-hero: #1a0f3d;
+  --bg-light: #1a1a2e;
+  --bg-gray: #16213e;
+  --text-dark: #e4e4e4;
+  --text-light: white;
+  --border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .card {
+  background: #2a2a3e;
+}
+
+body.dark-mode .paso-imagen img {
+  border-color: #3a3a5e;
+}
+
+body.dark-mode .card p,
+body.dark-mode .paso-texto li,
+body.dark-mode .metodos li {
+  color: #b8b8b8;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contenedor {
@@ -19,8 +57,8 @@ body {
 
 /* Header */
 header {
-  background: #0d0819;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
   padding: 20px 0;
 }
 
@@ -48,6 +86,11 @@ h1 {
   width: auto;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   margin-left: 15px;
   text-decoration: none;
@@ -65,10 +108,40 @@ nav a:hover {
   border-color: #40b4e5;
 }
 
+#theme-toggle {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle:hover {
+  background: rgba(64, 180, 229, 0.2);
+  border-color: #40b4e5;
+}
+
+.moon-icon {
+  display: none;
+}
+
+body.dark-mode .sun-icon {
+  display: none;
+}
+
+body.dark-mode .moon-icon {
+  display: inline;
+}
+
 /* Hero */
 .hero {
-  background: #2b1b5b;
-  color: white;
+  background: var(--bg-hero);
+  color: var(--text-light);
   padding: 60px 20px;
 }
 
@@ -86,6 +159,7 @@ nav a:hover {
 .hero-contenido h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+  color: white;
 }
 
 .hero-contenido p {
@@ -133,20 +207,20 @@ section {
 
 h2 {
   font-size: 2rem;
-  color: #2b1b5b;
+  color: var(--text-dark);
   margin-bottom: 40px;
   text-align: center;
 }
 
 h3 {
   font-size: 1.2rem;
-  color: #2b1b5b;
+  color: var(--text-dark);
   margin-bottom: 10px;
 }
 
 /* Características */
 #caracteristicas {
-  background: #f8f9fa;
+  background: var(--bg-gray);
 }
 
 .grid-caracteristicas {
@@ -173,7 +247,7 @@ h3 {
 
 /* Como Usar */
 #uso {
-  background: white;
+  background: var(--bg-light);
 }
 
 .paso {
@@ -212,7 +286,7 @@ h3 {
 
 /* Instalación */
 #instalacion {
-  background: #f8f9fa;
+  background: var(--bg-gray);
 }
 
 .metodos {
@@ -235,8 +309,8 @@ h3 {
 
 /* Footer */
 footer {
-  background: #2b1b5b;
-  color: white;
+  background: var(--bg-header);
+  color: var(--text-light);
   text-align: center;
   padding: 30px 20px;
 }
