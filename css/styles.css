@@ -126,16 +126,20 @@ nav a:hover {
   border-color: #40b4e5;
 }
 
-.moon-icon {
+.sun-icon {
   display: none;
+}
+
+.moon-icon {
+  display: inline;
 }
 
 body.dark-mode .sun-icon {
-  display: none;
+  display: inline;
 }
 
 body.dark-mode .moon-icon {
-  display: inline;
+  display: none;
 }
 
 /* Hero */
