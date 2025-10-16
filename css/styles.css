@@ -110,7 +110,7 @@ nav a:hover {
 
 #theme-toggle {
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: none;
   border-radius: 6px;
   padding: 8px 12px;
   margin-left: 15px;
@@ -122,8 +122,7 @@ nav a:hover {
 }
 
 #theme-toggle:hover {
-  background: rgba(64, 180, 229, 0.2);
-  border-color: #40b4e5;
+  opacity: 0.7;
 }
 
 .sun-icon {
@@ -155,6 +154,8 @@ body.dark-mode .moon-icon {
   gap: 30px;
   align-items: center;
 }
+
+
 
 .hero-contenido {
   text-align: center;
@@ -327,7 +328,7 @@ footer {
 
 #current-language {
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: none;
   border-radius: 6px;
   padding: 6px 10px;
   cursor: pointer;
@@ -338,8 +339,7 @@ footer {
 }
 
 #current-language:hover {
-  background: rgba(64, 180, 229, 0.2);
-  border-color: #40b4e5;
+  opacity: 0.7;
 }
 
 #current-flag {
