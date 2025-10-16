@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "usage": "Verwendung",
+    "install": "Installation"
+  },
+  "hero": {
+    "title": "Schützen Sie Ihren WordPress-Inhalt",
+    "subtitle": "Einfaches Plugin, das Textauswahl und Kopieren auf Ihrer Website blockiert",
+    "cta": "Jetzt Herunterladen"
+  },
+  "features": {
+    "title": "Hauptfunktionen",
+    "feature1-title": "Inhaltsschutz",
+    "feature1-desc": "Blockiert Textauswahl, um einfaches Kopieren zu verhindern",
+    "feature2-title": "Rollenausnahmen",
+    "feature2-desc": "Administratoren und Redakteure können ohne Einschränkungen kopieren",
+    "feature3-title": "Einfache Konfiguration",
+    "feature3-desc": "In wenigen Minuten über das WordPress-Panel konfigurierbar",
+    "feature4-title": "Benutzerdefinierte Selektoren",
+    "feature4-desc": "Definieren Sie, wo Auswahl erlaubt ist (Formulare, Code, usw.)"
+  },
+  "usage": {
+    "title": "Verwendung",
+    "step1-title": "1. Installieren und Aktivieren",
+    "step1-text": "Gehen Sie zu Plugins → Installierte Plugins und aktivieren Sie \"Anti Copy-Paste\".",
+    "step2-title": "2. Optionen Konfigurieren",
+    "step2-text": "Gehen Sie zu Einstellungen → Anti Copy-Paste und konfigurieren Sie:",
+    "step2-list1": "Globalen Schutz aktivieren",
+    "step2-list2": "Rollen ausschließen (Administratoren, Redakteure)",
+    "step2-list3": "Inhaltstypen ausschließen",
+    "step2-list4": "Erlaubte Selektoren definieren",
+    "step3-title": "3. Funktionalität Testen",
+    "step3-text": "Öffnen Sie Ihre Website im Inkognito-Modus und versuchen Sie, Text auszuwählen. Sie werden sehen, dass er nicht kopiert werden kann."
+  },
+  "install": {
+    "title": "Installation",
+    "manual-title": "Manuell",
+    "manual-step1": "ZIP-Datei herunterladen",
+    "manual-step2": "In Plugins → Plugin hochladen hochladen",
+    "manual-step3": "Plugin aktivieren"
+  },
+  "footer": {
+    "text": "© 2025 Aprendiz de SEO - Anti Copy-Paste Plugin"
+  }
+}

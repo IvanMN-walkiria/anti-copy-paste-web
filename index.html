@@ -18,14 +18,52 @@
           />
           Anti Copy-Paste
         </h1>
+
         <nav>
-          <a href="#caracteristicas">Características</a>
-          <a href="#uso">Cómo Usar</a>
-          <a href="#instalacion">Instalación</a>
+          <a href="#caracteristicas" data-section="nav" data-value="features"
+            >Características</a
+          >
+          <a href="#uso" data-section="nav" data-value="usage">Cómo Usar</a>
+          <a href="#instalacion" data-section="nav" data-value="install"
+            >Instalación</a
+          >
           <button id="theme-toggle" aria-label="Cambiar tema">
             <span class="sun-icon">☀️</span>
             <span class="moon-icon">🌙</span>
           </button>
+
+          <!-- Selector de idiomas -->
+          <div class="language-selector">
+            <button id="current-language" aria-label="Cambiar idioma">
+              <img id="current-flag" src="images/flags/es.png" alt="ES" />
+            </button>
+            <div class="language-dropdown" id="language-dropdown">
+              <button data-lang="es" class="lang-option">
+                <img src="images/flags/es.png" alt="ES" class="flag" />
+                <span>Español</span>
+              </button>
+              <button data-lang="en" class="lang-option">
+                <img src="images/flags/gb.png" alt="EN" class="flag" />
+                <span>English</span>
+              </button>
+              <button data-lang="fr" class="lang-option">
+                <img src="images/flags/fr.png" alt="FR" class="flag" />
+                <span>Français</span>
+              </button>
+              <button data-lang="de" class="lang-option">
+                <img src="images/flags/de.png" alt="DE" class="flag" />
+                <span>Deutsch</span>
+              </button>
+              <button data-lang="it" class="lang-option">
+                <img src="images/flags/it.png" alt="IT" class="flag" />
+                <span>Italiano</span>
+              </button>
+              <button data-lang="pt" class="lang-option">
+                <img src="images/flags/pt.png" alt="PT" class="flag" />
+                <span>Português</span>
+              </button>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -38,8 +76,10 @@
         </div>
 
         <div class="hero-contenido">
-          <h2>Protege tu Contenido de WordPress</h2>
-          <p>
+          <h2 data-section="hero" data-value="title">
+            Protege tu Contenido de WordPress
+          </h2>
+          <p data-section="hero" data-value="subtitle">
             Plugin simple que bloquea la selección y copia de texto en tu sitio
             web
           </p>
@@ -47,8 +87,9 @@
             href="https://aprendizdeseo.gumroad.com/l/anti-copy-paste"
             class="btn-cta"
             target="_blank"
-            >Descargar Ahora</a
           >
+            <span data-section="hero" data-value="cta">Descargar Ahora</span>
+          </a>
         </div>
 
         <div class="hero-imagen">
@@ -63,23 +104,41 @@
     <!-- Características -->
     <section id="caracteristicas">
       <div class="contenedor">
-        <h2>Características Principales</h2>
+        <h2 data-section="features" data-value="title">
+          Características Principales
+        </h2>
         <div class="grid-caracteristicas">
           <div class="card">
-            <h3>Protección de Contenido</h3>
-            <p>Bloquea la selección de texto para evitar copias fáciles</p>
+            <h3 data-section="features" data-value="feature1-title">
+              Protección de Contenido
+            </h3>
+            <p data-section="features" data-value="feature1-desc">
+              Bloquea la selección de texto para evitar copias fáciles
+            </p>
           </div>
           <div class="card">
-            <h3>Excepciones por Roles</h3>
-            <p>Administradores y editores pueden copiar sin restricciones</p>
+            <h3 data-section="features" data-value="feature2-title">
+              Excepciones por Roles
+            </h3>
+            <p data-section="features" data-value="feature2-desc">
+              Administradores y editores pueden copiar sin restricciones
+            </p>
           </div>
           <div class="card">
-            <h3>Fácil Configuración</h3>
-            <p>Se configura en minutos desde el panel de WordPress</p>
+            <h3 data-section="features" data-value="feature3-title">
+              Fácil Configuración
+            </h3>
+            <p data-section="features" data-value="feature3-desc">
+              Se configura en minutos desde el panel de WordPress
+            </p>
           </div>
           <div class="card">
-            <h3>Selectores Personalizados</h3>
-            <p>Define dónde permitir selección (formularios, código, etc.)</p>
+            <h3 data-section="features" data-value="feature4-title">
+              Selectores Personalizados
+            </h3>
+            <p data-section="features" data-value="feature4-desc">
+              Define dónde permitir selección (formularios, código, etc.)
+            </p>
           </div>
         </div>
       </div>
@@ -88,12 +147,14 @@
     <!-- Cómo Usar -->
     <section id="uso">
       <div class="contenedor">
-        <h2>Cómo Usar</h2>
+        <h2 data-section="usage" data-value="title">Cómo Usar</h2>
 
         <div class="paso">
           <div class="paso-texto">
-            <h3>1. Instalar y Activar</h3>
-            <p>
+            <h3 data-section="usage" data-value="step1-title">
+              1. Instalar y Activar
+            </h3>
+            <p data-section="usage" data-value="step1-text">
               Ve a <strong>Plugins → Plugins instalados</strong> y activa "Anti
               Copy-Paste".
             </p>
@@ -105,13 +166,25 @@
 
         <div class="paso">
           <div class="paso-texto">
-            <h3>2. Configurar Opciones</h3>
-            <p>Ve a <strong>Ajustes → Anti Copy-Paste</strong> y configura:</p>
+            <h3 data-section="usage" data-value="step2-title">
+              2. Configurar Opciones
+            </h3>
+            <p data-section="usage" data-value="step2-text">
+              Ve a <strong>Ajustes → Anti Copy-Paste</strong> y configura:
+            </p>
             <ul>
-              <li>Activar protección global</li>
-              <li>Excluir roles (administradores, editores)</li>
-              <li>Excluir tipos de contenido</li>
-              <li>Definir selectores permitidos</li>
+              <li data-section="usage" data-value="step2-list1">
+                Activar protección global
+              </li>
+              <li data-section="usage" data-value="step2-list2">
+                Excluir roles (administradores, editores)
+              </li>
+              <li data-section="usage" data-value="step2-list3">
+                Excluir tipos de contenido
+              </li>
+              <li data-section="usage" data-value="step2-list4">
+                Definir selectores permitidos
+              </li>
             </ul>
           </div>
           <div class="paso-imagen">
@@ -121,8 +194,10 @@
 
         <div class="paso">
           <div class="paso-texto">
-            <h3>3. Probar Funcionamiento</h3>
-            <p>
+            <h3 data-section="usage" data-value="step3-title">
+              3. Probar Funcionamiento
+            </h3>
+            <p data-section="usage" data-value="step3-text">
               Abre tu sitio en modo incógnito e intenta seleccionar texto. Verás
               que no se puede copiar.
             </p>
@@ -137,14 +212,20 @@
     <!-- Instalación -->
     <section id="instalacion">
       <div class="contenedor">
-        <h2>Instalación</h2>
+        <h2 data-section="install" data-value="title">Instalación</h2>
         <div class="metodos">
           <div>
-            <h3>Manual</h3>
+            <h3 data-section="install" data-value="manual-title">Manual</h3>
             <ol>
-              <li>Descarga el archivo ZIP</li>
-              <li>Sube en Plugins → Subir plugin</li>
-              <li>Activa el plugin</li>
+              <li data-section="install" data-value="manual-step1">
+                Descarga el archivo ZIP
+              </li>
+              <li data-section="install" data-value="manual-step2">
+                Sube en Plugins → Subir plugin
+              </li>
+              <li data-section="install" data-value="manual-step3">
+                Activa el plugin
+              </li>
             </ol>
           </div>
         </div>
@@ -154,7 +235,9 @@
     <!-- Footer -->
     <footer>
       <div class="contenedor">
-        <p>&copy; 2025 Aprendiz de SEO - Plugin Anti Copy-Paste</p>
+        <p data-section="footer" data-value="text">
+          &copy; 2025 Aprendiz de SEO - Plugin Anti Copy-Paste
+        </p>
       </div>
     </footer>
 

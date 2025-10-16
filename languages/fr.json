@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "features": "Caractéristiques",
+    "usage": "Comment Utiliser",
+    "install": "Installation"
+  },
+  "hero": {
+    "title": "Protégez Votre Contenu WordPress",
+    "subtitle": "Plugin simple qui bloque la sélection et la copie de texte sur votre site web",
+    "cta": "Télécharger Maintenant"
+  },
+  "features": {
+    "title": "Caractéristiques Principales",
+    "feature1-title": "Protection du Contenu",
+    "feature1-desc": "Bloque la sélection de texte pour éviter les copies faciles",
+    "feature2-title": "Exceptions par Rôles",
+    "feature2-desc": "Les administrateurs et éditeurs peuvent copier sans restrictions",
+    "feature3-title": "Configuration Facile",
+    "feature3-desc": "Se configure en quelques minutes depuis le panneau WordPress",
+    "feature4-title": "Sélecteurs Personnalisés",
+    "feature4-desc": "Définissez où autoriser la sélection (formulaires, code, etc.)"
+  },
+  "usage": {
+    "title": "Comment Utiliser",
+    "step1-title": "1. Installer et Activer",
+    "step1-text": "Allez dans Extensions → Extensions installées et activez \"Anti Copy-Paste\".",
+    "step2-title": "2. Configurer les Options",
+    "step2-text": "Allez dans Réglages → Anti Copy-Paste et configurez:",
+    "step2-list1": "Activer la protection globale",
+    "step2-list2": "Exclure les rôles (administrateurs, éditeurs)",
+    "step2-list3": "Exclure les types de contenu",
+    "step2-list4": "Définir les sélecteurs autorisés",
+    "step3-title": "3. Tester le Fonctionnement",
+    "step3-text": "Ouvrez votre site en mode incognito et essayez de sélectionner du texte. Vous verrez qu'il ne peut pas être copié."
+  },
+  "install": {
+    "title": "Installation",
+    "manual-title": "Manuel",
+    "manual-step1": "Téléchargez le fichier ZIP",
+    "manual-step2": "Téléversez dans Extensions → Téléverser une extension",
+    "manual-step3": "Activez l'extension"
+  },
+  "footer": {
+    "text": "© 2025 Aprendiz de SEO - Plugin Anti Copy-Paste"
+  }
+}

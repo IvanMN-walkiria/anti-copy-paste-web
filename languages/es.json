@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "features": "Características",
+    "usage": "Cómo Usar",
+    "install": "Instalación"
+  },
+  "hero": {
+    "title": "Protege tu Contenido de WordPress",
+    "subtitle": "Plugin simple que bloquea la selección y copia de texto en tu sitio web",
+    "cta": "Descargar Ahora"
+  },
+  "features": {
+    "title": "Características Principales",
+    "feature1-title": "Protección de Contenido",
+    "feature1-desc": "Bloquea la selección de texto para evitar copias fáciles",
+    "feature2-title": "Excepciones por Roles",
+    "feature2-desc": "Administradores y editores pueden copiar sin restricciones",
+    "feature3-title": "Fácil Configuración",
+    "feature3-desc": "Se configura en minutos desde el panel de WordPress",
+    "feature4-title": "Selectores Personalizados",
+    "feature4-desc": "Define dónde permitir selección (formularios, código, etc.)"
+  },
+  "usage": {
+    "title": "Cómo Usar",
+    "step1-title": "1. Instalar y Activar",
+    "step1-text": "Ve a Plugins → Plugins instalados y activa \"Anti Copy-Paste\".",
+    "step2-title": "2. Configurar Opciones",
+    "step2-text": "Ve a Ajustes → Anti Copy-Paste y configura:",
+    "step2-list1": "Activar protección global",
+    "step2-list2": "Excluir roles (administradores, editores)",
+    "step2-list3": "Excluir tipos de contenido",
+    "step2-list4": "Definir selectores permitidos",
+    "step3-title": "3. Probar Funcionamiento",
+    "step3-text": "Abre tu sitio en modo incógnito e intenta seleccionar texto. Verás que no se puede copiar."
+  },
+  "install": {
+    "title": "Instalación",
+    "manual-title": "Manual",
+    "manual-step1": "Descarga el archivo ZIP",
+    "manual-step2": "Sube en Plugins → Subir plugin",
+    "manual-step3": "Activa el plugin"
+  },
+  "footer": {
+    "text": "© 2025 Aprendiz de SEO - Plugin Anti Copy-Paste"
+  }
+}
